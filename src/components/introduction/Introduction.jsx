@@ -5,7 +5,7 @@ import IntroImage2 from '../../assets/introductionImages/IntroImage2.png';
 const Introduction = () => {
   return (
     <div className="bg-[#fff] px-10 pt-10 pb-20 lg:py-[110px] lg:px-[120px]">
-      <div className="flex flex-col-reverse justify-center lg:grid lg:grid-cols-2  items-center gap-10 md:gap-[140px]">
+      <div className="flex flex-col-reverse justify-center lg:grid lg:grid-cols-2  items-center gap-10 md:gap-[40px]">
         {/* left image section */}
         <div className="relative inline-block">
           {/* Background rectangle */}
@@ -27,8 +27,10 @@ const Introduction = () => {
         </div>
         {/* right introduction section */}
         <div className="flex flex-col gap-3">
-          <h1 className="text-[#000] text-[40px] font-bold">Starbeans</h1>
-          <h1 className="text-[#000] text-[14px] font-normal leading-normal font-mainTextStyle">
+          <h1 className="text-[#000] text-[40px] xl:text-[70px] font-bold font-lateef">
+            Starbeans
+          </h1>
+          <h1 className="text-[#000] text-[14px] xl:text-[20px] font-normal leading-normal font-kreon">
             Starbeans Ceylon is celebrated for its fresh, locally sourced
             seafood, complemented by an extensive selection of wines, cocktails,
             beers, and tropical fruit juices. Dessert offerings include homemade
