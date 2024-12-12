@@ -9,6 +9,8 @@ export default {
       fontFamily: {
         mainTextStyle: ['Manrope'],
         testText: ['Caveat'],
+        kreon: ['Kreon', 'serif'],
+        lateef: ['Lateef', 'cursive'],
       },
     },
   },
