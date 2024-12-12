@@ -6,6 +6,12 @@ export default {
       backgroundImage: {
         bannerImage: 'url(assets/bg-image.jpg)',
       },
+      fontFamily: {
+        mainTextStyle: ['Manrope'],
+        testText: ['Caveat'],
+        kreon: ['Kreon', 'serif'],
+        lateef: ['Lateef', 'cursive'],
+      },
     },
   },
   plugins: [],
