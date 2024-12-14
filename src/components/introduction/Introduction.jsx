@@ -4,10 +4,10 @@ import IntroImage2 from '../../assets/introductionImages/IntroImage2.png';
 
 const Introduction = () => {
   return (
-    <div className="bg-[#fff] px-10 pt-10 pb-20 lg:py-[110px] lg:px-[120px]">
+    <div className="bg-[#fff] px-10 pt-10 mb-20 lg:py-[110px] lg:px-[120px]">
       <div className="flex flex-col-reverse justify-center lg:grid lg:grid-cols-2  items-center gap-10 md:gap-[40px]">
         {/* left image section */}
-        <div className="relative inline-block">
+        <div className="relative inline-block mb-10">
           {/* Background rectangle */}
           <div className="absolute w-[60%] h-full border-[8px] border-black rounded-[19px] left-14 top-10 translate-y-30 z-0"></div>
           <div className="absolute w-[60%] h-full border-[8px] border-[#5B5B5B] rounded-[19px] left-8 top-16 translate-y-30 z-0"></div>
