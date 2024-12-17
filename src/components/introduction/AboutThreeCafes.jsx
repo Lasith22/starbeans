@@ -7,7 +7,7 @@ const AboutThreeCafes = () => {
     <div className="w-full px-5 md:px-10 py-10 md:py-20 flex flex-col gap-12 lg:gap-20">
       {/* 1st round section */}
 
-      <div className="bg-[#CFF4F0] rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative">
+      <div className="bg-[#CFF4F0] transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95  rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative">
         <img
           src={ThreeCafe1}
           className="w-[30%] border-solid ring-[#28E2D2] ring-[8px] md:ring-[20px] rounded-full "
@@ -29,13 +29,13 @@ const AboutThreeCafes = () => {
           </h1>
         </div>
 
-        <div className="absolute w-[10%] right-[-15px] lg:w-auto lg:right-[-26px] top-1/2 transform -translate-y-1/2 bg-[#269A90] rounded-full p-2 cursor-pointer ">
+        <div className="  absolute w-[10%] right-[-15px] lg:w-auto lg:right-[-26px] top-1/2 transform -translate-y-1/2 bg-[#269A90] rounded-full p-2 cursor-pointer ">
           <img src={RightArrowSvg} alt="" className="" />
         </div>
       </div>
       {/* 2nd round section */}
 
-      <div className="bg-[#BFF7D7] rounded-full flex  gap-5 relative">
+      <div className="bg-[#BFF7D7] rounded-full flex  gap-5 relative transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95">
         <div className="absolute w-[10%]  -translate-x-4 lg:-translate-x-8 lg:w-auto   top-1/2 transform -translate-y-1/2 bg-[#148B48] rounded-full p-2 cursor-pointer ">
           <img src={RightArrowSvg} alt="" className="" />
         </div>
@@ -60,7 +60,7 @@ const AboutThreeCafes = () => {
       </div>
 
       {/* 3rd round section */}
-      <div className="bg-[#F9D8D7] rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative">
+      <div className="bg-[#F9D8D7] rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-90">
         <img
           src={ThreeCafe2}
           className="w-[30%] border-solid ring-[#823835] ring-[8px] md:ring-[20px] rounded-full "
