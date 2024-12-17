@@ -1,4 +1,5 @@
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 import Hero from './components/hero/Hero';
 import AboutThreeCafes from './components/introduction/AboutThreeCafes';
 import CraftingSection from './components/introduction/CraftingSection';
@@ -11,6 +12,7 @@ function App() {
       <Introduction />
       <CraftingSection />
       <AboutThreeCafes />
+      <Footer />
       {/* <Contact /> */}
     </>
   );
