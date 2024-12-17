@@ -60,7 +60,7 @@ const AboutThreeCafes = () => {
       </div>
 
       {/* 3rd round section */}
-      <div className="bg-[#F9D8D7] rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-90">
+      <div className="bg-[#F9D8D7] rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-90 an">
         <img
           src={ThreeCafe2}
           className="w-[30%] border-solid ring-[#823835] ring-[8px] md:ring-[20px] rounded-full "
