@@ -4,7 +4,7 @@ import CraftingImage from '../../assets/introductionImages/Crafting.png';
 const CraftingSection = () => {
   return (
     <div className="bg-[#F3F3F3] px-10 py-20 w-full">
-      <div className=" max-w-[1240px] mx-auto flex flex-col md:grid md:grid-cols-3 gap-20">
+      <div className="max-w-[1240px] mx-auto flex flex-col md:grid md:grid-cols-3 gap-20">
         <div className="col-span-2 flex flex-col gap-3">
           <h1 className="text-[#000] text-[40px] xl:text-[70px] font-bold font-lateef gap-0">
             Crafting Excellence in Coffee
