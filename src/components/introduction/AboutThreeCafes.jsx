@@ -33,6 +33,31 @@ const AboutThreeCafes = () => {
           <img src={RightArrowSvg} alt="" className="" />
         </div>
       </div>
+      {/* 2nd round section */}
+
+      <div className="bg-[#BFF7D7] rounded-full flex  gap-5 relative">
+        <div className="absolute w-[10%]  -translate-x-4 lg:-translate-x-8 lg:w-auto   top-1/2 transform -translate-y-1/2 bg-[#148B48] rounded-full p-2 cursor-pointer ">
+          <img src={RightArrowSvg} alt="" className="" />
+        </div>
+        {/* text */}
+        <div className="flex flex-col items-end">
+          <h1 className="text-[#106D39] items-end flex  text-balance   justify-items-end  text-end font-bold leading-normal font-lateef md:text-[33px]  lg:text-[60px] lg:mt-0 mt-2">
+            Starbeans Cafe Blue-Whale
+          </h1>
+          <h1 className=" text-start  w-[80%]  lg:w-[80%] text-[#07361C] font-kreon md:text-[14px] lg:text-[17px] 2xl:text-[25px] font-light text-[6px]">
+            Starbeans’ café in Mirissa, located at No.198, Rendagewatta, Galle
+            Road, is another popular spot offering the restaurant's signature
+            range of fusion cuisines. This outlet provides a delightful coastal
+            dining experience, perfect for those looking to relax with fresh
+            seafood, tropical drinks, and flavorful dishes while enjoying the
+            laid-back vibe of the Mirissa area.
+          </h1>
+        </div>
+        <img
+          src={ThreeCafe2}
+          className="w-[30%] border-solid ring-[#1CB760] ring-[8px] md:ring-[20px] rounded-full "
+        />
+      </div>
 
       {/* 3rd round section */}
       <div className="bg-[#F9D8D7] rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative">
@@ -43,17 +68,15 @@ const AboutThreeCafes = () => {
         {/* text */}
         <div className="flex flex-col lg:justify-start lg:items-start text-start lg:ml-0 md:ml-3">
           <h1 className="text-[#4D110F] font-bold leading-normal font-lateef md:text-[33px]  lg:text-[60px] lg:mt-0 mt-2">
-            Ocean Bistro by Starbeans
+            Starbeans Cafe Blue-Whale
           </h1>
           <h1 className="text-start w-[90%]  lg:w-[80%] text-[#4D110F] font-kreon md:text-[14px] lg:text-[17px] 2xl:text-[25px] font-light text-[6px]">
-            Starbeans' flagship outlet is situated in the historic Old Dutch
-            Hospital in Galle, offering a fine-dining experience with stunning
-            panoramic views of Galle Fort, the bay, harbor entrance, and
-            Rumassala hills. The menu features a fusion of Western, Mexican,
-            Italian, and Sri Lankan cuisines, with an emphasis on fresh, locally
-            sourced seafood. This location is ideal for both casual diners and
-            those seeking a more luxurious dining experience while enjoying the
-            heritage ambiance of Galle.
+            Starbeans’ café in Mirissa, located at No.198, Rendagewatta, Galle
+            Road, is another popular spot offering the restaurant's signature
+            range of fusion cuisines. This outlet provides a delightful coastal
+            dining experience, perfect for those looking to relax with fresh
+            seafood, tropical drinks, and flavorful dishes while enjoying the
+            laid-back vibe of the Mirissa area.
           </h1>
         </div>
 
