@@ -7,7 +7,7 @@ const AboutThreeCafes = () => {
     <div className="w-full px-5 md:px-10 py-10 md:py-20 flex flex-col gap-12 lg:gap-20">
       {/* 1st round section */}
 
-      <div className="bg-[#CFF4F0] rounded-full flex    lg:justify-between  lg:items-start lg:gap-10 gap-5 relative">
+      <div className="bg-[#CFF4F0] rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative">
         <img
           src={ThreeCafe1}
           className="w-[30%] border-solid ring-[#28E2D2] ring-[8px] md:ring-[20px] rounded-full "
