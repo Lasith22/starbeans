@@ -8,7 +8,7 @@ import Introduction from './components/introduction/Introduction';
 function App() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <Introduction />
       <CraftingSection />
       <AboutThreeCafes />
