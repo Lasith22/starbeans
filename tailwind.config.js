@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        bannerImage: 'url(assets/bg-image.jpg)',
+        bannerImage: 'url(assets/bg-image3.jpg)',
       },
       fontFamily: {
         mainTextStyle: ['Manrope'],
