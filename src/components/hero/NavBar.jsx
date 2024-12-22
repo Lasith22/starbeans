@@ -36,7 +36,7 @@ const NavBar = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="font-thmor  justify-center lg:justify-evenly items-center space-x-10 font-normal text-[16px] hidden lg:flex">
+      <div className="font-thmor justify-center lg:justify-evenly items-center space-x-10 font-normal text-[16px] hidden lg:flex">
         <a
           href="#home"
           className="text-white hover:text-gray-300 transition duration-300"
@@ -69,11 +69,38 @@ const NavBar = () => {
         </a>
       </div>
       <Drawer anchor="left" onClose={closeDrawer} open={isDrawerVisible}>
-        <div className="flex flex-col gap-5 ">
-          <div className="mt-6 flex flex-col gap-10 mx-10 text-[#181F26] text-[20px] font-sans font-semibold">
-            <h1 className="">Menu</h1>
-            <h1>Rewards</h1>
-            <h1>Gift Cards</h1>
+        <div className="flex flex-col gap-5 bg-slate-400 ">
+          <div className="mt-6 flex flex-col gap-10 mx-10 text-[20px] font-sans font-semibold">
+            <a
+              href="#home"
+              className="text-black hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              About
+            </a>
+            <a
+              href="#outlets"
+              className=" text-blac hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Outlets
+            </a>
+            <a
+              href="#reservations"
+              className=" text-blac hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Reservations
+            </a>
+            <a
+              href="#contact"
+              className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Contact
+            </a>
           </div>
 
           <div className="border-t border-gray-300 shadow-lg shadow-black mx-5 my-5"></div>
