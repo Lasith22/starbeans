@@ -43,7 +43,7 @@ const Hero = () => {
                   src={HomePageImage4}
                   alt="Interior view 2"
                   style={{ position: 'absolute' }}
-                  className="2xl:w-[100%] lg:w-[100%] md:w-[100%] absolute -top-1 -translate-x-6 translate-y-22 z-0"
+                  className="2xl:w-[100%] lg:w-[100%]  absolute -top-1 -translate-x-6 translate-y-22 z-0"
                 />
                 <img
                   src={HomePageImage2}
