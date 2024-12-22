@@ -11,6 +11,8 @@ export default {
         testText: ['Caveat'],
         kreon: ['Kreon', 'serif'],
         lateef: ['Lateef', 'cursive'],
+        thmor: ['Kdam Thmor Pro', 'sans-serif'],
+        inter: ['"Inter"', 'sans-serif'],
       },
     },
   },

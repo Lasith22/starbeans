@@ -1,44 +1,47 @@
 import React from 'react';
-
+import MainLogo from '../../assets/mainLogo1.png';
 const NavBar = () => {
   return (
-    <div class="items-center justify-between ">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-            aria-current="page"
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >
-            Services
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </div>
+    <header className="inline-block relative  bg-[#333333AB] p-4 text-white items-center justify-between rounded-full w-full mt-12 mx-40">
+      {/* Logo */}
+      <div className="absolute  top-1/2 transform -translate-y-1/2 -translate-x-20">
+        <img src={MainLogo} alt="Starbeans Ceylon" className="w-[36%]  " />
+      </div>
+
+      {/* Navigation Links */}
+      <div className=" font-thmor flex justify-center lg:justify-evenly items-center space-x-10 font-normal text-[16px]">
+        <a
+          href="#home"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          About
+        </a>
+        <a
+          href="#outlets"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          Outlets
+        </a>
+        <a
+          href="#reservations"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          Reservations
+        </a>
+        <a
+          href="#contact"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          Contact
+        </a>
+      </div>
+    </header>
   );
 };
 
