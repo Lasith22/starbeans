@@ -1,18 +1,14 @@
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
-import Hero from './components/hero/Hero';
-import AboutThreeCafes from './components/introduction/AboutThreeCafes';
-import CraftingSection from './components/introduction/CraftingSection';
-import Introduction from './components/introduction/Introduction';
+import { Routes, Route } from 'react-router';
+import Home from './Pages/Home';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
     <>
-      <Hero />
-      <Introduction />
-      <CraftingSection />
-      <AboutThreeCafes />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 }
