@@ -40,7 +40,7 @@ const NavBar = () => {
       <div className="font-thmor justify-center lg:justify-evenly items-center space-x-10 font-normal text-[16px] hidden lg:flex">
         <NavLink
           to="/"
-          className="text-white hover:text-gray-300 transition duration-300 cursor-pointer"
+          className="text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40"
         >
           Home
         </NavLink>
