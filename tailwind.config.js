@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         bannerImage: 'url(assets/bg-image3.jpg)',
-        contactImage: 'url(assets/ContactMainImage.jpg)',
+        contactImage: 'url(assets/ContactMainImage4.jpg)',
       },
       fontFamily: {
         mainTextStyle: ['Manrope'],
@@ -14,6 +14,11 @@ export default {
         lateef: ['Lateef', 'cursive'],
         thmor: ['Kdam Thmor Pro', 'sans-serif'],
         inter: ['"Inter"', 'sans-serif'],
+        kranky: ['Kranky', 'cursive'],
+        lancelot: ['Lancelot', 'cursive'],
+      },
+      boxShadow: {
+        'custom-card': '0px 4px 29px 11px rgba(0, 0, 0, 0.25)',
       },
     },
   },
