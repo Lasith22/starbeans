@@ -1,13 +1,14 @@
-import Contact from './components/contact/Contact';
-import Hero from './components/hero/Hero';
-import Introduction from './components/introduction/Introduction';
+import { Routes, Route } from 'react-router';
+import Home from './Pages/Home';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
     <>
-      <Hero />
-      <Introduction />
-      {/* <Contact /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Contact />} />
+      </Routes>
     </>
   );
 }

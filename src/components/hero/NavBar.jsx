@@ -1,52 +1,113 @@
-import React from 'react';
-
+import MainLogo from '../../assets/mainLogo1.png';
+import React, { useState } from 'react';
+import { MdClose } from 'react-icons/md';
+import { TiThMenuOutline } from 'react-icons/ti';
+import { Drawer } from '@mui/material';
+import { NavLink } from 'react-router';
 const NavBar = () => {
+  const [isDrawerVisible, setIsDrawerVisible] = useState(false);
+  const showDrawer = () => {
+    setIsDrawerVisible(true);
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerVisible(false);
+  };
   return (
-    <div class=" left-0 right-0 py-4 z-50">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-            aria-current="page"
+    <header className="lg:inline-block lg:relative  bg-[#333333AB] p-4 text-white items-center justify-between lg:rounded-full w-full lg:mt-12 lg:mx-40">
+      {/* Logo */}
+      <div className="flex justify-between  items-center lg:flex-none lg:justify-normal lg:absolute  lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:-translate-x-20">
+        <img
+          src={MainLogo}
+          alt="Starbeans Ceylon"
+          className="lg:w-[36%] w-[20%] md:w-[10%] "
+        />
+        <div className="lg:hidden  ">
+          <div
+            onClick={isDrawerVisible ? closeDrawer : showDrawer}
+            className="flex lg:hidden mr-5"
           >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
-            Services
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
-            Pricing
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </div>
+            {isDrawerVisible ? (
+              <MdClose size={24} color="white" />
+            ) : (
+              <TiThMenuOutline size={24} />
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation Links */}
+      <div className="font-thmor justify-center lg:justify-evenly items-center space-x-10 font-normal text-[16px] hidden lg:flex">
+        <NavLink
+          to="/"
+          className="text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          About
+        </NavLink>
+        <a
+          href="#outlets"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          Outlets
+        </a>
+        <a
+          href="#reservations"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          Reservations
+        </a>
+        <NavLink
+          to="/contact"
+          className="text-white hover:text-gray-300 transition duration-300"
+        >
+          Contact
+        </NavLink>
+      </div>
+      <Drawer anchor="left" onClose={closeDrawer} open={isDrawerVisible}>
+        <div className="flex flex-col gap-5 bg-slate-400 ">
+          <div className="mt-6 flex flex-col gap-10 mx-10 text-[20px] font-sans font-semibold">
+            <NavLink
+              to="/"
+              className="text-black hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              About
+            </NavLink>
+            <a
+              href="#outlets"
+              className=" text-blac hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Outlets
+            </a>
+            <a
+              href="#reservations"
+              className=" text-blac hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Reservations
+            </a>
+            <NavLink
+              to="/contact"
+              className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
+            >
+              Contact
+            </NavLink>
+          </div>
+
+          <div className="border-t border-gray-300 shadow-lg shadow-black mx-5 my-5"></div>
+        </div>
+      </Drawer>
+    </header>
   );
 };
 
