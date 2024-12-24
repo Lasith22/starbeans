@@ -2,7 +2,7 @@ import React from 'react';
 import ContactImg1 from '../../assets/contact/ContactImg1.png';
 const ContactCard = () => {
   return (
-    <div className="px-10 py-10 flex items-center justify-center">
+    <div className="px-5 md:px-10 py-10 flex items-center justify-center">
       <div class="shadow-custom-card p-6 bg-white rounded-lg  w-full flex flex-col items-center justify-center">
         <h1 class="2xl:text-6xl lg:text-5xl md:text-3xl  text-2xl font-normal font-lancelot text-center">
           A Journey from Humble Beginnings to <br /> Culinary Excellence

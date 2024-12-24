@@ -4,7 +4,7 @@ import ContactImg3 from '../../assets/contact/ContactImg3.png';
 import ContactImg4 from '../../assets/contact/ContactImg4.png';
 const BigCard = () => {
   return (
-    <div className="px-10 pb-10 flex items-center justify-center">
+    <div className="px-5 md:px-10  pb-10 flex items-center justify-center">
       <div class=" shadow-inset-shadow p-6 w-full bg-white rounded-lg flex flex-col items-center justify-center gap-8">
         {/* 1st image and text */}
         <div className="md:grid md:grid-cols-6 md:gap-10 flex flex-col gap-7 items-center justify-center">
