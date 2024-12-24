@@ -7,7 +7,11 @@ const ContactHome = () => {
       <div className="lg:flex items-center justify-center   ">
         <NavBar />
       </div>
-      <div className="h-screen items-center  sm:justify-center sm:items-center sm:pt-0 pt-20 flex flex-col "></div>
+      <div className="h-screen items-center justify-center flex">
+        <h1 className=" font-normal font-kranky  text-7xl md:text-6xl lg:text-8xl  2xl:text-9xl text-[#ffffff] pb-10 text-center">
+          Starbeans Ceylon.
+        </h1>
+      </div>
     </section>
   );
 };
