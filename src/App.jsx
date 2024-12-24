@@ -13,7 +13,6 @@ function App() {
       <CraftingSection />
       <AboutThreeCafes />
       <Footer />
-      {/* <Contact /> */}
     </>
   );
 }
