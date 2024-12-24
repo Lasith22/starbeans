@@ -2,7 +2,8 @@ import MainLogo from '../../assets/mainLogo1.png';
 import React, { useState } from 'react';
 import { MdClose } from 'react-icons/md';
 import { TiThMenuOutline } from 'react-icons/ti';
-import { Drawer, Button } from '@mui/material';
+import { Drawer } from '@mui/material';
+import { NavLink } from 'react-router';
 const NavBar = () => {
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
   const showDrawer = () => {
@@ -37,12 +38,12 @@ const NavBar = () => {
 
       {/* Navigation Links */}
       <div className="font-thmor justify-center lg:justify-evenly items-center space-x-10 font-normal text-[16px] hidden lg:flex">
-        <a
-          href="#home"
-          className="text-white hover:text-gray-300 transition duration-300"
+        <NavLink
+          to="/"
+          className="text-white hover:text-gray-300 transition duration-300 cursor-pointer"
         >
           Home
-        </a>
+        </NavLink>
         <a
           href="#about"
           className="text-white hover:text-gray-300 transition duration-300"
@@ -61,22 +62,22 @@ const NavBar = () => {
         >
           Reservations
         </a>
-        <a
-          href="#contact"
+        <NavLink
+          to="/contact"
           className="text-white hover:text-gray-300 transition duration-300"
         >
           Contact
-        </a>
+        </NavLink>
       </div>
       <Drawer anchor="left" onClose={closeDrawer} open={isDrawerVisible}>
         <div className="flex flex-col gap-5 bg-slate-400 ">
           <div className="mt-6 flex flex-col gap-10 mx-10 text-[20px] font-sans font-semibold">
-            <a
-              href="#home"
+            <NavLink
+              to="/"
               className="text-black hover:text-gray-300 transition duration-300 font-thmor"
             >
               Home
-            </a>
+            </NavLink>
             <a
               href="#about"
               className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
@@ -95,12 +96,12 @@ const NavBar = () => {
             >
               Reservations
             </a>
-            <a
-              href="#contact"
+            <NavLink
+              to="/contact"
               className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
             >
               Contact
-            </a>
+            </NavLink>
           </div>
 
           <div className="border-t border-gray-300 shadow-lg shadow-black mx-5 my-5"></div>

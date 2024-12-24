@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         bannerImage: 'url(assets/bg-image3.jpg)',
+        contactImage: 'url(assets/ContactMainImage.jpg)',
       },
       fontFamily: {
         mainTextStyle: ['Manrope'],
