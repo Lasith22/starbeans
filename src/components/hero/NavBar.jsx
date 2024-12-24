@@ -44,12 +44,12 @@ const NavBar = () => {
         >
           Home
         </NavLink>
-        <a
-          href="#about"
+        <NavLink
+          to="/about"
           className="text-white hover:text-gray-300 transition duration-300"
         >
           About
-        </a>
+        </NavLink>
         <a
           href="#outlets"
           className="text-white hover:text-gray-300 transition duration-300"
@@ -78,12 +78,12 @@ const NavBar = () => {
             >
               Home
             </NavLink>
-            <a
-              href="#about"
+            <NavLink
+              to="/about"
               className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
             >
               About
-            </a>
+            </NavLink>
             <a
               href="#outlets"
               className=" text-blac hover:text-gray-300 transition duration-300 font-thmor"
