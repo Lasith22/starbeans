@@ -19,6 +19,7 @@ export default {
         lancelot: ['Lancelot', 'cursive'],
         josefin: ['"Josefin Sans"', 'sans-serif'],
         manjari: ['"Manjari"', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       boxShadow: {
         'custom-card': '0px 4px 29px 11px rgba(0, 0, 0, 0.25)',

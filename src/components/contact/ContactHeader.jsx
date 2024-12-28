@@ -8,8 +8,8 @@ const ContactHeader = () => {
         <NavBar />
       </div>
       {/* three cards */}
-      <div className="h-auto md:h-screen flex flex-col items-center justify-center px-5 ">
-        <div className=" py-20 lg:flex grid md:grid-cols-2 grid-cols-1 gap-10  ">
+      <div className="h-auto lg:h-screen flex flex-col items-center justify-center px-5 ">
+        <div className=" py-20 lg:flex grid   grid-cols-1 gap-10  ">
           {/* 1st card */}
           <div className="flex flex-col justify-start items-start p-5 bg-[#000] opacity-25 text-white rounded-2xl">
             <h1 className="2xl:text-4xl lg:text-2xl   font-bold font-josefin text-[#FFF] leading-normal">
