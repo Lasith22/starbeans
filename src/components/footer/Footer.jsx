@@ -5,10 +5,10 @@ import Insta from '../../assets/footer/instagram.png';
 import TripIcon from '../../assets/footer/tripadvisor.png';
 const Footer = () => {
   return (
-    <div className="bg-[#E3E3E3] p-5 ">
-      <div className="flex flex-col md:grid md:grid-cols-2">
+    <div className="bg-[#D9D9D9] px-10">
+      <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-8">
         {/* 1st columns */}
-        <div className="flex gap-8">
+        <div className="flex md:gap-8 gap-3 items-center col-span-3  lg:py-0 py-10   ">
           <img src={MainLogo} alt="" className="w-[30%]" />
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-5">
@@ -25,8 +25,15 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="flex flex-col gap-5 justify-items-center justify-center  items-center underline    col-span-2 font-poppins text-lg   lg:border-black/25 lg:border-x-2  py-10">
+          <h1 className="  cursor-pointer">Home</h1>
+          <h1 className="  cursor-pointer">About</h1>
+          <h1 className="  cursor-pointer"> Outlets</h1>
+          <h1 className="  cursor-pointer">Contact</h1>
+        </div>
+
         {/* 2nd column */}
-        <div className=" flex flex-col items-center">
+        <div className=" flex flex-col items-center col-span-3  pb-10  ">
           {/* Title */}
           <h2 className="text-center text-black font-bold text-[20px] lg:text-[28px] mb-4 mt-6 md:mt-0">
             Opening Hours
