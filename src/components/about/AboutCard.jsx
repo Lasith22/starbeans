@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactImg1 from '../../assets/contact/ContactImg1.png';
-const ContactCard = () => {
+const AboutCard = () => {
   return (
     <div className="px-5 md:px-10 py-10 flex items-center justify-center">
       <div class="shadow-custom-card p-6 bg-white rounded-lg  w-full flex flex-col items-center justify-center">
@@ -36,4 +36,4 @@ const ContactCard = () => {
   );
 };
 
-export default ContactCard;
+export default AboutCard;

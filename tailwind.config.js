@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         bannerImage: 'url(assets/bg-image3.jpg)',
         contactImage: 'url(assets/ContactMainImage4.jpg)',
+        contactImage2: 'url(assets/Hikkaduwa1.png)',
       },
       fontFamily: {
         mainTextStyle: ['Manrope'],
@@ -16,6 +17,8 @@ export default {
         inter: ['"Inter"', 'sans-serif'],
         kranky: ['Kranky', 'cursive'],
         lancelot: ['Lancelot', 'cursive'],
+        josefin: ['"Josefin Sans"', 'sans-serif'],
+        manjari: ['"Manjari"', 'sans-serif'],
       },
       boxShadow: {
         'custom-card': '0px 4px 29px 11px rgba(0, 0, 0, 0.25)',
