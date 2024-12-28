@@ -6,7 +6,7 @@ export default {
       backgroundImage: {
         bannerImage: 'url(assets/bg-image3.jpg)',
         contactImage: 'url(assets/ContactMainImage4.jpg)',
-        contactImage2: 'url(assets/Hikkaduwa1.png)',
+        contactImage2: 'url(assets/ContactImage1.png)',
       },
       fontFamily: {
         mainTextStyle: ['Manrope'],
@@ -20,6 +20,7 @@ export default {
         josefin: ['"Josefin Sans"', 'sans-serif'],
         manjari: ['"Manjari"', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        manuale: ['Manuale', 'serif'],
       },
       boxShadow: {
         'custom-card': '0px 4px 29px 11px rgba(0, 0, 0, 0.25)',
