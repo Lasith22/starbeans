@@ -1,15 +1,13 @@
 import React from 'react';
-import ContactHome from '../components/contact/ContactHome';
-import ContactCard from '../components/contact/ContactCard';
-import BigCard from '../components/contact/BigCard';
+import ContactHeader from '../components/contact/ContactHeader';
+import ContactForm from '../components/contact/ContactForm';
 import Footer from '../components/footer/Footer';
 
 const Contact = () => {
   return (
     <>
-      <ContactHome />
-      <ContactCard />
-      <BigCard />
+      <ContactHeader />
+      <ContactForm />
       <Footer />
     </>
   );

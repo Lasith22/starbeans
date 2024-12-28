@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../hero/NavBar';
 
-const ContactHome = () => {
+const AboutHome = () => {
   return (
     <section className="bg-contactImage  bg-repeat bg-cover bg-center">
       <div className="lg:flex items-center justify-center   ">
@@ -16,4 +16,4 @@ const ContactHome = () => {
   );
 };
 
-export default ContactHome;
+export default AboutHome;
