@@ -40,31 +40,51 @@ const NavBar = () => {
       <div className="font-thmor justify-center lg:justify-evenly items-center space-x-10 font-normal text-[16px] hidden lg:flex">
         <NavLink
           to="/"
-          className="text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black border-solid border-b-2 border-2 p-2 bg-white rounded-lg'
+              : 'text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40'
+          }
         >
           Home
         </NavLink>
         <NavLink
           to="/about"
-          className="text-white hover:text-gray-300 transition duration-300"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black border-solid border-b-2 border-2 p-2 bg-white rounded-lg'
+              : 'text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40'
+          }
         >
           About
         </NavLink>
         <a
           href="#outlets"
-          className="text-white hover:text-gray-300 transition duration-300"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black border-solid border-b-2 border-2 p-2 bg-white rounded-lg'
+              : 'text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40'
+          }
         >
           Outlets
         </a>
         <NavLink
           to="/reservations"
-          className="text-white hover:text-gray-300 transition duration-300"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black border-solid border-b-2 border-2 p-2 bg-white rounded-lg'
+              : 'text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40'
+          }
         >
           Reservations
         </NavLink>
         <NavLink
           to="/contact"
-          className="text-white hover:text-gray-300 transition duration-300"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black border-solid border-b-2 border-2 p-2 bg-white rounded-lg'
+              : 'text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40'
+          }
         >
           Contact
         </NavLink>

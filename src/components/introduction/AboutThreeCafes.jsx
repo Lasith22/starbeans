@@ -2,6 +2,8 @@ import React from 'react';
 import ThreeCafe1 from '../../assets/introductionImages/ThreeCafe1.png';
 import RightArrowSvg from '../../assets/introductionImages/RightArrow.svg';
 import ThreeCafe2 from '../../assets/introductionImages/ThreeCafe2.png';
+import ThreeCafe3 from '../../assets/introductionImages/ThreeCafe3.png';
+
 const AboutThreeCafes = () => {
   return (
     <div className="w-full px-5 md:px-10 py-10 md:py-20 flex flex-col gap-12 lg:gap-20">
@@ -54,7 +56,7 @@ const AboutThreeCafes = () => {
           </h1>
         </div>
         <img
-          src={ThreeCafe2}
+          src={ThreeCafe3}
           className="w-[30%] border-solid ring-[#1CB760] ring-[8px] md:ring-[20px] rounded-full "
         />
       </div>
