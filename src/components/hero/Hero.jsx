@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
       <section className="bg-bannerImage bg-repeat bg-cover bg-center">
-        <div className="lg:flex items-center justify-center   ">
+        <div className="lg:flex items-center justify-center">
           <NavBar />
         </div>
         <div className="h-screen items-center  sm:justify-center sm:items-center sm:pt-0 pt-20 flex flex-col ">

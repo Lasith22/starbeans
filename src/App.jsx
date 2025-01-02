@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Reservations from './Pages/Reservations';
+import TheBarnStarBeans from './Pages/outlets/TheBarnStarBeans';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reservations" element={<Reservations />} />
+        <Route path="/outlets/the-barn-outlet" element={<TheBarnStarBeans />} />
       </Routes>
     </>
   );
