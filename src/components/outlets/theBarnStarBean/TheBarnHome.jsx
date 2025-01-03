@@ -17,7 +17,7 @@ const TheBarnHome = () => {
           <NavBar />
         </div>
         <div className="h-screen items-center bg-black/20 sm:bg-inherit text-center sm:text-start ">
-          <div className="flex flex-col  mb-10 pt-16 md:pt-24 2xl:pt-40 mx-2 md:mx-20">
+          <div className="flex flex-col   mb-10 pt-16 md:pt-24 2xl:pt-40 mx-2 md:mx-20">
             <h1 className="font-normal font-lancelot  text-7xl md:text-6xl lg:text-8xl 2xl:text-9xl text-[#ffffff]">
               The Barn
             </h1>
