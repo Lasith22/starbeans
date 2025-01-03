@@ -3,13 +3,18 @@ import ThreeCafe1 from '../../assets/introductionImages/ThreeCafe1.png';
 import RightArrowSvg from '../../assets/introductionImages/RightArrow.svg';
 import ThreeCafe2 from '../../assets/introductionImages/ThreeCafe2.png';
 import ThreeCafe3 from '../../assets/introductionImages/ThreeCafe3.png';
-
+import { useNavigate } from 'react-router';
 const AboutThreeCafes = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full px-5 md:px-10 py-10 md:py-20 flex flex-col gap-12 lg:gap-20">
       {/* 1st round section */}
 
-      <div className="bg-[#CFF4F0] transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95  rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative">
+      <div
+        className="bg-[#CFF4F0] transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95  rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative cursor-pointer"
+        onClick={() => navigate('/outlets/the-barn-outlet')}
+      >
         <img
           src={ThreeCafe1}
           className="w-[30%] border-solid ring-[#28E2D2] ring-[8px] md:ring-[20px] rounded-full "

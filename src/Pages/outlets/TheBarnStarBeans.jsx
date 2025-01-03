@@ -1,7 +1,8 @@
 import React from 'react';
+import TheBarnHome from '../../components/outlets/theBarnStarBean/TheBarnHome';
 
 const TheBarnStarBeans = () => {
-  return <div>TheBarnStarBeans</div>;
+  return <TheBarnHome />;
 };
 
 export default TheBarnStarBeans;

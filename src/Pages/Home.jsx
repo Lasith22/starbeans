@@ -5,6 +5,7 @@ import CraftingSection from '../components/introduction/CraftingSection';
 import AboutThreeCafes from '../components/introduction/AboutThreeCafes';
 import Footer from '../components/footer/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
+
 const Home = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
