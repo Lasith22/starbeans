@@ -1,5 +1,4 @@
 import React from 'react';
-import CallUsImg from '../../../assets/outlets/the-barn-images/CallUsImg.png';
 
 const CallUsSection = () => {
   return (
