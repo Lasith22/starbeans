@@ -13,10 +13,10 @@ const Hero = () => {
         <div className="lg:flex items-center justify-center">
           <NavBar />
         </div>
-        <div className="h-screen items-center  sm:justify-center sm:items-center sm:pt-0 pt-20 flex flex-col ">
-          <div className="w-full px-10 sm:px-20  justify-items-center items-center justify-center flex md:flex flex-col gap-10  lg:gap-40 md:items-baseline lg:items-center lg:grid place-items-center lg:grid-cols-2">
+        <div className="h-screen items-center justify-start  lg:justify-center sm:items-center sm:pt-0 pt-20 flex flex-col ">
+          <div className="w-full px-10 sm:px-20 lg  justify-items-center items-center justify-center flex md:flex flex-col gap-10  lg:gap-40 md:items-baseline lg:items-center lg:grid place-items-center lg:grid-cols-2">
             {/* left section */}
-            <div className="bg-[#333333AB] items-center justify-center flex flex-col p-10 rounded-3xl">
+            <div className="bg-[#333333AB] items-center justify-center flex flex-col p-10 rounded-3xl lg:mt-0 mt-5">
               <h1 className=" font-inter text-xl  lg:text-4xl 2xl:text-6xl font-light mb-4 leading-tight text-white">
                 "A Feast For Your Senses Awaits."
               </h1>
