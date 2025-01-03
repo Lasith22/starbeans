@@ -42,7 +42,10 @@ const AboutThreeCafes = () => {
       </div>
       {/* 2nd round section */}
 
-      <div className="bg-[#BFF7D7] rounded-full flex  gap-5 relative transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95">
+      <div
+        onClick={() => navigate('/outlets/ocean-bistro-outlet')}
+        className="bg-[#BFF7D7] rounded-full flex  gap-5 relative transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95 cursor-pointer"
+      >
         <div className="absolute w-[10%]  -translate-x-4 lg:-translate-x-8 lg:w-auto   top-1/2 transform -translate-y-1/2 bg-[#148B48] rounded-full p-2 cursor-pointer ">
           <img src={RightArrowSvg} alt="" className="" />
         </div>

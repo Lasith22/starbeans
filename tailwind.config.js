@@ -9,6 +9,10 @@ export default {
         contactImage2: 'url(assets/ContactImage1.png)',
         outletImage1:
           'url(assets/outlets/the-barn-images/TheBarnMainImage.png)',
+        outletImage2:
+          'url(assets/outlets/ocean-bistro-images/OceanBistroMainImg.png)',
+        outletImage3: 'url(assets/outlets/cafe-blue-whale/CafeBlueWhale.png)',
+
         callUsImage: 'url(assets/outlets/the-barn-images/CallUsImg.png)',
       },
       fontFamily: {
