@@ -4,7 +4,7 @@ import TheBarnImage1 from '../../../assets/outlets/the-barn-images/TheBarnImage1
 const SecondCardSection = () => {
   return (
     <>
-      <div className="p-10">
+      <div className="sm:p-10 p-5">
         <div className="p-5 md:grid md:grid-cols-6 md:gap-10 flex flex-col-reverse gap-7 items-center justify-center rounded-[18px] bg-[linear-gradient(98deg,_#BFF7D7_44.08%,_#799D89_118.14%,_#70917E_192.19%)]">
           <img
             src={TheBarnImage1}
