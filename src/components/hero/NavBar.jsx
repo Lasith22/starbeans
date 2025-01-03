@@ -4,8 +4,60 @@ import { MdClose } from 'react-icons/md';
 import { TiThMenuOutline } from 'react-icons/ti';
 import { Drawer } from '@mui/material';
 import { NavLink } from 'react-router';
+import { FaArrowRight } from 'react-icons/fa';
+import { Dropdown } from 'antd';
+
 const NavBar = () => {
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
+  const [dropDownVisible, setDropDownVisible] = useState(false);
+
+  const items = [
+    {
+      key: '1',
+      label: (
+        <NavLink
+          to="/outlets/the-barn-outlet"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black rounded-lg underline font-kreon'
+              : 'text-white cursor-pointer z-40 font-kreon'
+          }
+        >
+          The Barn By Starbeans
+        </NavLink>
+      ),
+    },
+    {
+      key: '2',
+      label: (
+        <NavLink
+          to="/outlets/ocean-bistro-outlet"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black rounded-lg underline font-kreon'
+              : 'text-white cursor-pointer z-40 font-kreon'
+          }
+        >
+          Ocean Bistro By Starbeans
+        </NavLink>
+      ),
+    },
+    {
+      key: '3',
+      label: (
+        <NavLink
+          to="/outlets/cafe-blue-whale-outlet"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black rounded-lg underline font-kreon'
+              : 'text-white cursor-pointer z-40 font-kreon'
+          }
+        >
+          Cafe Blue - Whale By Starbeans
+        </NavLink>
+      ),
+    },
+  ];
   const showDrawer = () => {
     setIsDrawerVisible(true);
   };
@@ -58,16 +110,31 @@ const NavBar = () => {
         >
           About
         </NavLink>
-        <a
-          href="#outlets"
-          className={({ isActive }) =>
-            isActive
-              ? 'text-black border-solid border-b-2 border-2 p-2 bg-white rounded-lg'
-              : 'text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40'
-          }
+        <Dropdown
+          menu={{
+            items,
+          }}
+          placement="bottomLeft"
+          arrow={{
+            pointAtCenter: true,
+          }}
         >
-          Outlets
-        </a>
+          <div className="flex flex-row gap-2 justify-center items-center group ">
+            <a
+              href="#outlets"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-black border-solid border-b-2 border-2 p-2 bg-white rounded-lg'
+                  : 'text-white hover:text-gray-300 transition duration-300 cursor-pointer z-40'
+              }
+            >
+              Outlets
+            </a>
+
+            <FaArrowRight className="transition-transform duration-300 group-hover:rotate-90" />
+          </div>
+        </Dropdown>
+
         <NavLink
           to="/reservations"
           className={({ isActive }) =>
@@ -89,9 +156,14 @@ const NavBar = () => {
           Contact
         </NavLink>
       </div>
-      <Drawer anchor="left" onClose={closeDrawer} open={isDrawerVisible}>
+      <Drawer
+        className="!z-[9999]"
+        anchor="left"
+        onClose={closeDrawer}
+        open={isDrawerVisible}
+      >
         <div className="flex flex-col gap-5 bg-slate-400 ">
-          <div className="mt-6 flex flex-col gap-10 mx-10 text-[20px] font-sans font-semibold">
+          <div className="mt-6 flex flex-col gap-5 mx-10 text-[20px] font-sans font-semibold">
             <NavLink
               to="/"
               className="text-black hover:text-gray-300 transition duration-300 font-thmor"
@@ -104,12 +176,58 @@ const NavBar = () => {
             >
               About
             </NavLink>
-            <a
-              href="#outlets"
-              className=" text-blac hover:text-gray-300 transition duration-300 font-thmor"
-            >
-              Outlets
-            </a>
+
+            <div className="flex flex-row gap-2 items-center group">
+              <NavLink
+                onClick={() => setDropDownVisible(!dropDownVisible)}
+                className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
+              >
+                Outlets
+              </NavLink>
+
+              <FaArrowRight
+                className={`  ${
+                  dropDownVisible
+                    ? 'rotate-90 transition-transform duration-300 text-gray-300'
+                    : 'rotate-0'
+                }`}
+              />
+            </div>
+            {dropDownVisible && (
+              <div className="flex flex-col gap-1">
+                <NavLink
+                  to="/outlets/the-barn-outlet"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'text-black rounded-lg underline font-kreon text-sm'
+                      : 'text-white cursor-pointer z-40 font-kreon  text-sm'
+                  }
+                >
+                  The Barn By Starbeans
+                </NavLink>
+                <NavLink
+                  to="/outlets/ocean-bistro-outlet"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'text-black rounded-lg underline font-kreon text-sm'
+                      : 'text-white cursor-pointer z-40 font-kreon  text-sm'
+                  }
+                >
+                  Ocean Bistro By Starbeans
+                </NavLink>
+                <NavLink
+                  to="/outlets/cafe-blue-whale-outlet"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'text-black rounded-lg underline font-kreon text-sm'
+                      : 'text-white cursor-pointer z-40 font-kreon  text-sm'
+                  }
+                >
+                  Cafe Blue - Whale By Starbeans
+                </NavLink>
+              </div>
+            )}
+
             <NavLink
               to="/reservations"
               className=" text-black hover:text-gray-300 transition duration-300 font-thmor"
