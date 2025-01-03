@@ -9,6 +9,7 @@ export default {
         contactImage2: 'url(assets/ContactImage1.png)',
         outletImage1:
           'url(assets/outlets/the-barn-images/TheBarnMainImage.png)',
+        callUsImage: 'url(assets/outlets/the-barn-images/CallUsImg.png)',
       },
       fontFamily: {
         mainTextStyle: ['Manrope'],
@@ -23,6 +24,7 @@ export default {
         manjari: ['"Manjari"', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         manuale: ['Manuale', 'serif'],
+        kufam: ['Kufam', 'sans-serif'],
       },
       boxShadow: {
         'custom-card': '0px 4px 29px 11px rgba(0, 0, 0, 0.25)',
