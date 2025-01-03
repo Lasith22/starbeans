@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         {/* 2nd column */}
-        <div className=" flex flex-col items-center col-span-3  lg:pb-0 lg:mb-0  pb-5 mb-5  ">
+        <div className=" flex flex-col items-center col-span-3 ">
           {/* Title */}
           <h2 className="text-center text-black font-bold text-[17px] lg:text-[20px] mb-4 mt-6 md:mt-0">
             Opening Hours
@@ -70,35 +70,6 @@ const Footer = () => {
               </h1>
             </div>
           </div>
-
-          {/* <div className="flex flex-col gap-2 font-poppins mx-3">
-            <div className="grid grid-cols-2  justify-between items-center ">
-              <h1 className="text-[#A57B22] font-bold  text-[13px] lg:text-[18px]">
-                10.00 A.M - 10.30 P.M
-              </h1>
-              <h1 className="text-black text-[13px] lg:text-[18px] text-center line-clamp-1">
-                Ocean Bistro
-              </h1>
-            </div>
-
-            <div className="grid grid-cols-2    justify-between items-center ">
-              <h1 className="text-[#A57B22] font-bold  text-[13px] lg:text-[18px]">
-                10.00 A.M - 10.30 P.M
-              </h1>
-              <h1 className="text-black text-[13px] lg:text-[18px] text-center">
-                Cafe Blue - Whale
-              </h1>
-            </div>
-
-            <div className="grid grid-cols-2  justify-between items-center pb-20 ">
-              <h1 className="text-[#A57B22] font-bold  text-[13px] lg:text-[18px]">
-                10.00 A.M - 10.30 P.M
-              </h1>
-              <h1 className="text-black text-[13px] lg:text-[18px] text-center">
-                The Barn by Starbeans
-              </h1>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
