@@ -13,7 +13,7 @@ const AboutThreeCafes = () => {
 
       <div
         className="bg-[#CFF4F0] transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95  rounded-full flex lg:justify-between  lg:items-start lg:gap-10 gap-5 relative cursor-pointer"
-        onClick={() => navigate('/outlets/the-barn-outlet')}
+        onClick={() => navigate('/outlets/ocean-bistro-outlet')}
       >
         <img
           src={ThreeCafe1}
@@ -43,7 +43,7 @@ const AboutThreeCafes = () => {
       {/* 2nd round section */}
 
       <div
-        onClick={() => navigate('/outlets/ocean-bistro-outlet')}
+        onClick={() => navigate('/outlets/the-barn-outlet')}
         className="bg-[#BFF7D7] rounded-full flex  gap-5 relative transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-95 cursor-pointer"
       >
         <div className="absolute w-[10%]  -translate-x-4 lg:-translate-x-8 lg:w-auto   top-1/2 transform -translate-y-1/2 bg-[#148B48] rounded-full p-2 cursor-pointer ">
@@ -52,15 +52,16 @@ const AboutThreeCafes = () => {
         {/* text */}
         <div className="flex flex-col items-end">
           <h1 className="text-[#106D39] items-end flex  text-balance   justify-items-end  text-end font-bold leading-normal font-lateef md:text-[33px]  lg:text-[60px] lg:mt-0 mt-2">
-            Starbeans Cafe Blue-Whale
+            The Barn by Starbeans
           </h1>
           <h1 className=" text-start  w-[80%]  lg:w-[80%] text-[#07361C] font-kreon md:text-[14px] lg:text-[17px] 2xl:text-[25px] font-light text-[6px]">
-            Starbeans’ café in Mirissa, located at No.198, Rendagewatta, Galle
-            Road, is another popular spot offering the restaurant's signature
-            range of fusion cuisines. This outlet provides a delightful coastal
-            dining experience, perfect for those looking to relax with fresh
-            seafood, tropical drinks, and flavorful dishes while enjoying the
-            laid-back vibe of the Mirissa area.
+            Located in the scenic hill country of Ella, The Barn by Starbeans
+            offers a cozy, semi-fine dining experience. This location is
+            well-known for its wood-fired pizzas, rich coffee, and an eclectic
+            mix of local and international dishes. The charming barn-style
+            setting adds to the warm, inviting atmosphere, making it a perfect
+            stop for tourists and locals alike who seek both great food and a
+            relaxing environment.
           </h1>
         </div>
         <img
