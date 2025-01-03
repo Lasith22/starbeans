@@ -4,7 +4,6 @@ import HomePageImage1 from '../../assets/HomePageImage1.png';
 import HomePageImage2 from '../../assets/HomePageImage2.png';
 import HomePageImage3 from '../../assets/HomePageImage3.png';
 import HomePageImage4 from '../../assets/HomePageImage4.png';
-import DripEffect from '../../assets/drip-effect.png';
 
 const Hero = () => {
   return (
@@ -16,8 +15,8 @@ const Hero = () => {
         <div className="h-screen items-center justify-start  lg:justify-center sm:items-center sm:pt-0 pt-20 flex flex-col ">
           <div className="w-full px-10 sm:px-20 lg  justify-items-center items-center justify-center flex md:flex flex-col gap-10  lg:gap-40 md:items-baseline lg:items-center lg:grid place-items-center lg:grid-cols-2">
             {/* left section */}
-            <div className="bg-[#333333AB] items-center justify-center flex flex-col p-10 rounded-3xl lg:mt-0 md:mt-5">
-              <h1 className=" font-inter text-xl  lg:text-4xl 2xl:text-6xl font-light mb-4 leading-tight text-white">
+            <div className="bg-[#333333AB] items-center justify-center flex flex-col p-5 md:p-10 rounded-3xl  lg:mt-0 md:mt-5">
+              <h1 className=" font-inter text-lg  lg:text-4xl 2xl:text-6xl font-light mb-4 leading-tight text-white">
                 "A Feast For Your Senses Awaits."
               </h1>
               <p className="font-sans text-sm sm:text-base leading-relaxed">
@@ -36,7 +35,7 @@ const Hero = () => {
                 <img
                   src={HomePageImage1}
                   alt="Interior view 1"
-                  className="2xl:w-[60%] lg:w-[50%] md:w-[60%] w-[60%] z-20 relative translate-x-16 sm:translate-x-0"
+                  className="2xl:w-[60%] lg:w-[50%] md:w-[60%] w-[50%] z-20 relative translate-x-16 sm:translate-x-0"
                 />
                 <img
                   src={HomePageImage4}
