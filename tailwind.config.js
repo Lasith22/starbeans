@@ -7,6 +7,8 @@ export default {
         bannerImage: 'url(assets/bg-image3.jpg)',
         contactImage: 'url(assets/ContactMainImage4.jpg)',
         contactImage2: 'url(assets/ContactImage1.png)',
+        outletImage1:
+          'url(assets/outlets/the-barn-images/TheBarnMainImage.png)',
       },
       fontFamily: {
         mainTextStyle: ['Manrope'],
