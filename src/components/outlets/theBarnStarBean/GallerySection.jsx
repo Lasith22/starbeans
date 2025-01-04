@@ -9,7 +9,7 @@ import GalleryImg6 from '../../../assets/outlets/the-barn-images/GalleryImg6.png
 
 const GallerySection = () => {
   return (
-    <div className=" p-5 sm:p-10">
+    <div id="gallery-section" className=" p-5 sm:p-10">
       <div className="flex flex-col items-center justify-center gap-7 p-5">
         <h1 className=" font-poppins font-normal text-[#000] 2xl:text-6xl lg:text-5xl md:text-3xl text-2xl">
           Gallery{' '}
