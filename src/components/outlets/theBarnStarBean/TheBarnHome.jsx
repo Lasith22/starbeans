@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../../hero/NavBar';
+import { Link } from 'react-scroll';
 
 const TheBarnHome = () => {
   return (
@@ -28,9 +29,17 @@ const TheBarnHome = () => {
           <div className="md:grid md:grid-cols-2 gap-4 mx-2 md:mx-20">
             <div className="flex justify-items-center items-center mt-10 gap-2">
               <div className="h-0 p-0.5 w-full bg-white rounded-md" />
-              <button className="py-2 px-5 bg-white text-[#1F5363] text-2xl font-lancelot font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-xl">
+
+              <Link
+                to="gallery-section"
+                smooth={true}
+                duration={800}
+                offset={-50}
+                className="py-2 px-5 bg-white text-[#1F5363] text-2xl font-lancelot font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-xl cursor-pointer"
+              >
                 Menu
-              </button>
+              </Link>
+
               <div className="h-0 p-0.5 w-full bg-white rounded-md" />
             </div>
           </div>
