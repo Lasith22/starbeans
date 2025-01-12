@@ -31,7 +31,7 @@ const TheBarnHome = () => {
               <div className="h-0 p-0.5 w-full bg-white rounded-md" />
 
               <Link
-                to="gallery-section"
+                to="menu-section"
                 smooth={true}
                 duration={800}
                 offset={-50}

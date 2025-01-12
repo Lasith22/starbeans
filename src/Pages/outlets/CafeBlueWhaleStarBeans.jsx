@@ -4,12 +4,14 @@ import SecondCardImage from '../../components/outlets/cafeBlueWhaleStarBean/Seco
 import GallerySection from '../../components/outlets/theBarnStarBean/GallerySection';
 import CallUsSection from '../../components/outlets/theBarnStarBean/CallUsSection';
 import Footer from '../../components/footer/Footer';
+import FoodSection from '../../components/outlets/common/FoodSection';
 
 const CafeBlueWhaleStarBeans = () => {
   return (
     <>
       <CafeBlueWhaleHome />
       <SecondCardImage />
+      <FoodSection />
       <GallerySection />
       <CallUsSection />
       <Footer />
