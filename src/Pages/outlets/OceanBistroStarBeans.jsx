@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import OceanBistroHome from '../../components/outlets/oceanBistroStarBean/OceanBistroHome';
 import Footer from '../../components/footer/Footer';
 import SecondCardSection from '../../components/outlets/oceanBistroStarBean/SecondCardSection';
@@ -7,6 +7,9 @@ import CallUsSection from '../../components/outlets/theBarnStarBean/CallUsSectio
 import FoodSection from '../../components/outlets/common/FoodSection';
 
 const OceanBistroStarBeans = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <OceanBistroHome />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../components/hero/Hero';
 import Introduction from '../components/introduction/Introduction';
 import CraftingSection from '../components/introduction/CraftingSection';
@@ -13,6 +13,9 @@ const Home = () => {
     damping: 30,
     restDelta: 0.001,
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <motion.div
