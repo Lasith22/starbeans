@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 const CallUsSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="bg-callUsImage  bg-repeat bg-cover bg-center">
       <div className=" flex flex-col justify-start items-start mx-10 p-10">
@@ -18,6 +20,7 @@ const CallUsSection = () => {
       </div>
       <div className="flex justify-center items-center justify-items-center">
         <button
+          onClick={() => navigate('/contact')}
           type="button"
           class="text-white bg-[#FE7611] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-400 font-medium rounded-lg text-2xl md:text-4xl px-5 py-2.5 text-center me-2 mb-10"
         >

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactHeader from '../components/contact/ContactHeader';
 import ContactForm from '../components/contact/ContactForm';
 import Footer from '../components/footer/Footer';
@@ -10,6 +10,9 @@ const Contact = () => {
     damping: 30,
     restDelta: 0.001,
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <motion.div

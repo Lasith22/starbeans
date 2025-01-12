@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../../hero/NavBar';
 import { Link } from 'react-scroll';
-
+import { motion } from 'framer-motion';
 const TheBarnHome = () => {
   return (
     <section className="relative">
@@ -30,15 +30,21 @@ const TheBarnHome = () => {
             <div className="flex justify-items-center items-center mt-10 gap-2">
               <div className="h-0 p-0.5 w-full bg-white rounded-md" />
 
-              <Link
-                to="menu-section"
-                smooth={true}
-                duration={800}
-                offset={-50}
+              <motion.div
                 className="py-2 px-5 bg-white text-[#1F5363] text-2xl font-lancelot font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-xl cursor-pointer"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
               >
-                Menu
-              </Link>
+                <Link
+                  to="menu-section"
+                  smooth={true}
+                  duration={800}
+                  offset={-50}
+                >
+                  Menu
+                </Link>
+              </motion.div>
 
               <div className="h-0 p-0.5 w-full bg-white rounded-md" />
             </div>

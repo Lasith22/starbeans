@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReservationHome from '../components/reservations/ReservationHome';
 import Footer from '../components/footer/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
@@ -9,6 +9,9 @@ const Reservations = () => {
     damping: 30,
     restDelta: 0.001,
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <motion.div

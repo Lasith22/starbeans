@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AboutHome from '../components/about/AboutHome';
 import AboutCard from '../components/about/AboutCard';
 import BigCard from '../components/about/BigCard';
@@ -11,6 +11,9 @@ const About = () => {
     damping: 30,
     restDelta: 0.001,
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <motion.div
